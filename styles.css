@@ -5,3 +5,39 @@
     grid-template-columns: 1fr 4fr 2fr;
     grid-template-rows: 1fr 1fr 6fr 1fr;
 }
+
+#left-side-bar
+{
+    grid-row: 1 / 5;
+    grid-column: 1 / 1;
+}
+
+#top-search-bar
+{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+}
+
+#content-buttons-bar
+{
+    grid-row: 2 / 3;
+    grid-column: 2 / 4; 
+}
+
+#center-content-cards
+{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;     
+}
+
+#right-info-cards
+{
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;  
+}
+
+#footer
+{
+    grid-row: 4 / 5;
+    grid-column: 2 / 4;
+}
