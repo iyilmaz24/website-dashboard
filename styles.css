@@ -94,14 +94,29 @@ button:hover{
     display: grid;
     grid-template-rows: 1fr;
     height: min(3rem);
-    grid-template-columns: 3rem 1fr 2rem 4rem 5rem;
+    grid-template-columns: 3rem 1fr 1.5rem 3rem 6rem;
 }
 
 .top-search-bar-ui
 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.top-search-bar-ui > img
+{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+#top-search-bar-active
+{
+    background-color: forestgreen;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
 }
 
 #content-buttons-bar
@@ -118,6 +133,30 @@ button:hover{
 #content-buttons-div > button
 {
     margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+#greeting-pfp-div
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#greeting-name-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+#greeting-pfp-div > img
+{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
 }
 
 #center-content-cards
@@ -152,7 +191,6 @@ button:hover{
 {
     grid-row: 3 / 4;
     grid-column: 3 / 4;  
-
     display: grid;
     grid-row: repeat(2, 1fr);
 }
