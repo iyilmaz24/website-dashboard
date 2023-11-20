@@ -225,3 +225,18 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+
+#footer-links-div
+{
+    margin: 0.8rem;
+}
+
+#footer-links-div > a
+{
+    margin: 0rem 0.8rem 0rem 0.8rem;
+}
+
+#footer-github-link
+{
+    margin-bottom: 0.8rem;
+}
