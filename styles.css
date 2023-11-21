@@ -64,13 +64,15 @@ button:hover{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: skyblue;
 
 }
 
 #side-bar-title
 {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.5rem;
+    color: black;
 }
 
 #side-bar-links
@@ -85,9 +87,17 @@ button:hover{
 
 .sidebar-ui
 {   
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+
+    > a
+    {
+        margin-left: 0.4rem;
+        text-decoration: none;
+        color: black;
+    }
 }
 
 #side-bar-settings
