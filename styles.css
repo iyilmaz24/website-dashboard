@@ -52,7 +52,7 @@ button:hover{
 {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
-    grid-template-rows: 1fr 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 6fr 0.5fr;
 }
 
 #left-side-bar
@@ -70,7 +70,7 @@ button:hover{
 {
     margin-top: 2rem;
     font-size: 1.75rem;
-    color: #292F33;
+    color: #0767b0;
     font-weight: bolder;
 }
 
@@ -90,7 +90,6 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-weight: bolder;
     > a
     {
         margin-left: 0.4rem;
@@ -113,7 +112,7 @@ button:hover{
 
 #top-search-bar
 {
-    background-color: #E1E8ED;
+    background-color: #fff;
     grid-row: 1 / 2;
     grid-column: 2 / 4;
     display: grid;
@@ -199,7 +198,6 @@ button:hover{
     align-items: center;
     margin-left: 1rem;
     font-size: 1rem;
-    font-weight: bold;
     line-height: 150%;
 }
 
@@ -237,11 +235,12 @@ button:hover{
     width: min(10rem);
     height: min(10rem);
     margin: 1rem;
+    background-color: #E1E8ED
 }
 
 #right-info-cards
 {
-    background-color: #E1E8ED;
+    background-color: #fff;
     grid-row: 3 / 4;
     grid-column: 3 / 4;  
     display: grid;
@@ -252,6 +251,11 @@ button:hover{
 {
     display: flex;
     flex-direction: column;
+}
+
+.right-info-box
+{
+    background-color: #E1E8ED
 }
 
 #footer
@@ -278,8 +282,9 @@ button:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 0.5rem;
+    margin: 0.75rem 0.5rem;
     gap: 0.35rem;
+    font-weight: bold;
 }
 
 .right-info-box
@@ -293,19 +298,19 @@ button:hover{
 
 #footer-links-div
 {
-    margin: 0.8rem;
+    margin: 0.5rem;
 
     > a
     {
         margin: 0rem 0.8rem 0rem 0.8rem;
         text-decoration: none;
-        color: #E1E8ED;
+        color: #fff;
     }
 }
 
 #footer-github-link, #footer-github-link > a
 {
     text-decoration: none;
-    color: #E1E8ED;
+    color: #fff;
     margin-bottom: 0.8rem;
 }
