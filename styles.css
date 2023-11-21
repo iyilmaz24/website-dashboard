@@ -10,9 +10,10 @@ html
     height: 100%;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    background-color: gainsboro;
+    background-color: #CCD6DD;
     font-size: 16px;
     font-family: Roboto;
+    /* color: #292F33; */
 }
 
 body
@@ -23,7 +24,7 @@ body
     justify-content: space-around;
 }
 
-div
+body > div
 {
     border: solid 1px black;
 }
@@ -32,21 +33,20 @@ button
 {
     cursor: pointer;
     font-size: 0.8rem;
-    border: 1px solid black;
+    border: 0.05rem solid black;
     letter-spacing: 0.1rem;
     min-width: 3rem;
     white-space: normal;
     text-align: center;
-    color: #F7F7F7;
-    background-color: transparent;
+    background-color: #CCD6DD;
     padding: 0.5rem 1rem 0.5rem 1rem;
     height: 2rem;
     border-radius: 1rem;
 }
 
 button:hover{
-    color: #fff;
-    background-color: #616467;
+    color: #E1E8ED;
+    background-color: #55ACEE;
 }
 
 #dashboard-grid
@@ -58,21 +58,21 @@ button:hover{
 
 #left-side-bar
 {
+    background-color:#fff;
     grid-row: 1 / 5;
     grid-column: 1 / 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: skyblue;
-
 }
 
 #side-bar-title
 {
     margin-top: 2rem;
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1.75rem;
+    color: #292F33;
+    font-weight: bolder;
 }
 
 #side-bar-links
@@ -91,12 +91,12 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
+    font-weight: bolder;
     > a
     {
         margin-left: 0.4rem;
         text-decoration: none;
-        color: black;
+        color: #292F33;
     }
 }
 
@@ -114,12 +114,30 @@ button:hover{
 
 #top-search-bar
 {
+    background-color: #E1E8ED;
     grid-row: 1 / 2;
     grid-column: 2 / 4;
     display: grid;
     grid-template-rows: 1fr;
     height: min(3rem);
-    grid-template-columns: 3rem 1fr 1.5rem 3rem 6rem;
+    grid-template-columns: 4rem 1fr 1.5rem 3rem 6rem;
+}
+
+#top-search-bar-1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar
+{
+    margin-left: 0.5rem;
+    background-color: #CCD6DD;
+    border-radius: 1.1rem;
+    height: 1.7rem;
+    border: solid 0.05rem black;
+    text-align: center;
 }
 
 .top-search-bar-ui
@@ -146,6 +164,7 @@ button:hover{
 
 #content-buttons-bar
 {
+    background-color: #E1E8ED;
     grid-row: 2 / 3;
     grid-column: 2 / 4; 
     display: flex;
@@ -186,6 +205,7 @@ button:hover{
 
 #center-content-cards
 {
+    background-color: #E1E8ED;
     grid-row: 3 / 4;
     grid-column: 2 / 3;  
     display: flex;
@@ -214,6 +234,7 @@ button:hover{
 
 #right-info-cards
 {
+    background-color: #E1E8ED;
     grid-row: 3 / 4;
     grid-column: 3 / 4;  
     display: grid;
@@ -228,6 +249,7 @@ button:hover{
 
 #footer
 {
+    background-color: #55ACEE;
     grid-row: 4 / 5;
     grid-column: 2 / 4;
     display: flex;
@@ -239,7 +261,6 @@ button:hover{
 
 .text-label
 {
-    color: blue;
     font-size: 1.1rem;
     > img 
     {
@@ -266,14 +287,18 @@ button:hover{
 #footer-links-div
 {
     margin: 0.8rem;
+
+    > a
+    {
+        margin: 0rem 0.8rem 0rem 0.8rem;
+        text-decoration: none;
+        color: #E1E8ED;
+    }
 }
 
-#footer-links-div > a
+#footer-github-link, #footer-github-link > a
 {
-    margin: 0rem 0.8rem 0rem 0.8rem;
-}
-
-#footer-github-link
-{
+    text-decoration: none;
+    color: #E1E8ED;
     margin-bottom: 0.8rem;
 }
