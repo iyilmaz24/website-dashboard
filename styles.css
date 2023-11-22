@@ -64,6 +64,7 @@ button:hover{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 0.5rem;
 }
 
 #side-bar-title
@@ -117,7 +118,7 @@ button:hover{
     grid-column: 2 / 4;
     display: grid;
     grid-template-rows: 1fr;
-    height: min(3rem);
+    height: min(3.5rem);
     grid-template-columns: 4rem 1fr 1.5rem 3rem 6rem;
 }
 
@@ -136,7 +137,7 @@ button:hover{
 
 #search-bar
 {
-    margin-left: 0.5rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
     background-color: #CCD6DD;
     border-radius: 1.1rem;
     height: 1.7rem;
@@ -210,7 +211,7 @@ button:hover{
 
 #center-content-cards
 {
-    background-color: #fff;
+    background-color: #E1E8ED;
     grid-row: 3 / 4;
     grid-column: 2 / 3;  
     display: flex;
@@ -235,12 +236,12 @@ button:hover{
     width: min(10rem);
     height: min(10rem);
     margin: 1rem;
-    background-color: #E1E8ED
+    background-color: #fff;
 }
 
 #right-info-cards
 {
-    background-color: #fff;
+    background-color: #E1E8ED;;
     grid-row: 3 / 4;
     grid-column: 3 / 4;  
     display: grid;
@@ -255,9 +256,15 @@ button:hover{
 
 .right-info-box
 {
-    background-color: #E1E8ED
+    background-color: #fff;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 #footer
 {
     background-color: #55ACEE;
@@ -287,15 +294,6 @@ button:hover{
     font-weight: bold;
 }
 
-.right-info-box
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #footer-links-div
 {
     margin: 0.5rem;
@@ -314,3 +312,57 @@ button:hover{
     color: #fff;
     margin-bottom: 0.8rem;
 }
+
+.content-box, .right-info-box
+{
+    border-radius: 0.7rem;
+}
+
+@media (max-width: 685px)
+{
+    #right-announcements-box, #right-friends-box
+    {
+        display: none;
+    }
+
+    #right-info-cards
+    {
+        grid-column: none;
+        grid-row: none;
+    }
+
+    #center-content-cards, #content-buttons-bar, #top-search-bar, #footer
+    {
+        grid-column: 2 / 4;
+    }
+
+}
+
+
+@media (max-width: 605px)
+{
+    #share-button, #right-announcements-box, #right-friends-box, #left-side-bar
+    {
+        display: none;
+    }
+
+    #right-info-cards, #left-side-bar
+    {
+        grid-column: none;
+        grid-row: none;
+    }
+
+    #center-content-cards, #content-buttons-bar, #top-search-bar, #footer
+    {
+        grid-column: 1 / 4;
+    }
+
+}
+
+/* @media (max-width: 525px)
+{
+    #delete-button
+    {
+        display: none;
+    }
+} */
