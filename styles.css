@@ -254,6 +254,11 @@ button:hover{
     flex-direction: column;
 }
 
+#right-friends-box
+{
+    margin-bottom: 1rem;
+}
+
 .right-info-box
 {
     background-color: #fff;
